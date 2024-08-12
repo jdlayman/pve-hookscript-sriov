@@ -63,6 +63,7 @@ function fixup_bridge_fdb {
           bridge)  bridge=${kv[1]};;
           virtio)  macaddr=${kv[1]};;
           hwaddr)  macaddr=${kv[1]};;
+          vmxnet3)  macaddr=${kv[1]};;
         esac
       done
       # special processing needed if member of vlan
